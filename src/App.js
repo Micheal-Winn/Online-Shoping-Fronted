@@ -4,6 +4,7 @@ import {useEffect} from "react";
 
 import theme from "./styles/theme";
 import Appbar from "./components/appbar";
+import Banner from "./components/banner";
 
 function App() {
     useEffect(()=>{
@@ -13,7 +14,7 @@ function App() {
      <ThemeProvider theme={theme}>
             <Container maxWidth={"xl"} sx={{background: '#fff'}}>
                 <Appbar/>
-                <Button variant={'contained'}> Test</Button>
+                <Banner/>
             </Container>
      </ThemeProvider>
   );
